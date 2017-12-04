@@ -1,0 +1,112 @@
+<!DOCTYPE html><html><head><meta charset=utf-8><link rel=dns-prefetch href=//s1.mi.com><link rel=dns-prefetch href=//img01.mifile.cn><link rel=dns-prefetch href=//img03.mifile.cn><link rel=dns-prefetch href=//img08.mifile.cn><link rel=dns-prefetch href=//hd.mi.com><title>小米之家大事记</title><meta http-equiv=X-UA-Compatible content="IE=Edge"><meta name=renderer content=webkit><meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0,minimal-ui"><meta name=imagemode content=force><meta name=apple-mobile-web-app-capable content=yes><meta name=apple-mobile-web-app-status-bar-style content=black><meta name=format-detection content="telephone=no"><meta http-equiv=pragma content=no-cache><meta name=description content=手机版小米商城客户端可以随时随地参与预约抢购小米手机，轻松下单购买，实时查询订单信息掌握物流状态，小米商城app手机客户端还有新品信息通知推送功能，所有商品信息随身掌握。><meta name=keywords content=小米商城,小米手机,小米商城下载,小米商城app><link rel="shortcut icon" type=image/x-icon href=/favicon.ico><link rel=apple-touch-icon-precomposed href=//img01.mifile.cn/m/app/touch-icon.png><script src=//res.wx.qq.com/open/js/jweixin-1.0.0.js></script><script>(function(win) {
+            var doc = win.document,
+                html = doc.documentElement;
+            var baseWidth = 720,
+                grids = baseWidth / 100,
+                resizeEvt = 'orientationchange' in win ? 'orientationchange' : 'resize',
+                recalc = function() {
+                    var clientWidth = html.clientWidth || 320;
+                    if (clientWidth > 720) {
+                        clientWidth = 720
+                    };
+                    html.style.fontSize = clientWidth / grids + 'px';
+                };
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', function() {
+                setTimeout(recalc)
+            }, false);
+        })(window);
+        window.Tracker = {
+            events: [],
+            push: function(o) {
+                this.events.push(o)
+            }
+        };</script><link href=/p/ghd/2017/zzz0519h5/static/css/app.4358b7fcfaf5eb6e044322c7a2e28d84.css rel=stylesheet></head><body><div id=app><transition name=fade mode=out-in appear><component :is=currentView></component></transition></div><script type=text/javascript src=/p/ghd/2017/zzz0519h5/static/js/vendor.f1d34fd636576995b4a5.js></script><script type=text/javascript src=/p/ghd/2017/zzz0519h5/static/js/app.00b6b11445e8c414e2a7.js></script></body><script>// 大树统计
+    var _msq = _msq || [];
+    (function() {
+        //渠道统计
+        // 渠道的URL的参数分别是
+        // client_id 与 masid 如果有这两个参数就设置cookie
+        var getCookie = function(sName) {
+            sName = sName.toLowerCase();
+            var oCrumbles = document.cookie.split(';');
+            for (var i = 0; i < oCrumbles.length; i++) {
+                var oPair = oCrumbles[i].split('=');
+                var sKey = decodeURIComponent(oPair[0].trim().toLowerCase());
+                var sValue = oPair.length > 1 ? oPair[1] : '';
+                if (sKey == sName)
+                    return decodeURIComponent(sValue);
+            }
+            return '';
+        }
+        var setCookie = function(sName, sValue, second) {
+            var date = new Date();
+            date.setTime(date.getTime() + second * 1000);
+            var sCookie = encodeURIComponent(sName) + '=' + encodeURIComponent(sValue) + ';path=/;domain=.mi.com;expires=' + date.toGMTString();
+            document.cookie = sCookie;
+        }
+        var getParameterByName = function(name) {
+            name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+            var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+                results = regex.exec(location.search);
+            return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+        }
+        var client_id = getParameterByName('client_id');
+        var masid = getParameterByName('masid');
+        var edm_task = getParameterByName('edm_task');
+
+        if (client_id) {
+            setCookie('client_id', client_id, 3600);
+            _msq.push(['setVars', 'client_id', client_id]);
+        }
+        if (masid) {
+            setCookie('masid', masid, 3600);
+            _msq.push(['setVars', 'masid', masid]);
+        }
+        if (edm_task) {
+            setCookie('edm_task', edm_task, 1800);
+            _msq.push(['setVars', 'edm_task', edm_task]);
+        }
+
+        var _userAgent = navigator.userAgent.toLowerCase();
+        var _domainId;
+        if (_userAgent.indexOf('xiaomi/miuibrowser/4.3/shop') !== -1 && _userAgent.indexOf('iphone') === -1) {
+            _domainId = 130;
+        } else if (_userAgent.indexOf('xiaomi/miuibrowser/4.3/shop/ios') !== -1) {
+            _domainId = 131;
+        } else {
+            _domainId = 129;
+        }
+        _msq.push(['setDomainId', _domainId]);
+    })();
+    _msq.push(['trackPageView']);
+    (function() {
+        var ms = document.createElement('script');
+        ms.type = 'text/javascript';
+        ms.async = true;
+        ms.src = '//c1.mifile.cn/f/i/15/stat/js/xmst.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ms, s);
+
+        window.statInit = function() {
+            if (window.jQuery && jQuery.fn.linkSign) {
+                window.jQuery && jQuery("body,.J_linksign-customize").linkSign();
+            } else {
+                var t = window.setInterval(function() {
+                    if (window.jQuery && jQuery.fn.linkSign) {
+                        window.clearInterval(t);
+                        window.jQuery && jQuery("body,.J_linksign-customize").linkSign();
+                    }
+                }, 50);
+            }
+        }
+    })();
+    var _hmt = _hmt = _hmt || [],
+        _gaq = _hmt;
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?4982d57ea12df95a2b24715fb6440726";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();</script></html>
